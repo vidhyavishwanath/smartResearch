@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@700&display=swap');
+
+.home-layout {
+  display: flex;
+  min-height: 100vh;
+  background: #fff;
+}
+
+.main-content {
+  flex: 1;
+  padding: 48px 32px;
+}
+
+.atlas-title {
+  font-family: 'Instrument Sans', Arial, sans-serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #22223b;
+  margin-bottom: 32px;
+}
+
+.home-container {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.home-title {
+  text-align: center;
+  color: #1f2937;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.search-section {
+  margin-bottom: 30px;
+}
+
+.loading-container {
+  text-align: center;
+  color: #6b7280;
+  padding: 20px;
+  font-size: 1.1rem;
+}
+
+.results-section {
+  margin-top: 20px;
+}
+
+.results-title {
+  color: #374151;
+  margin-bottom: 16px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 12px;
+}
+
+.result-card {
+  padding: 16px;
+  background-color: #f9fafb;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  font-weight: 500;
+  color: #374151;
+}
+
+.result-card:hover {
+  background-color: #f3f4f6;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.no-results-container {
+  text-align: center;
+  color: #6b7280;
+  margin-top: 40px;
+  padding: 40px;
+  background-color: #f9fafb;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+}
+
+.no-results-title {
+  margin-bottom: 16px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+.no-results-text {
+  margin-bottom: 16px;
+  font-size: 1rem;
+}
+
+.suggestions-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 12px;
+}
+
+.suggestions-list li {
+  margin: 4px 0;
+  font-size: 0.95rem;
+  color: #6b7280;
+}
+
+.suggestions-list li:hover {
+  color: #374151;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .home-container {
+    padding: 20px 15px;
+  }
+  
+  .home-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .results-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 8px;
+  }
+  
+  .result-card {
+    padding: 12px;
+    font-size: 0.9rem;
+  }
+  
+  .no-results-container {
+    padding: 30px 20px;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-title {
+    font-size: 1.8rem;
+  }
+  
+  .results-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .result-card {
+    padding: 14px;
+  }
+} 

@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter');
+.sidebar {
+  width: 180px;
+  background: #f8fafc;
+  border-right: 1.5px solid #e5e7eb;
+  min-height: 100vh;
+  padding-top: 40px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  padding: 16px 24px;
+  font-size: 1.1rem;
+  color: #374151;
+  cursor: pointer;
+  border-radius: 8px 0 0 8px;
+  margin-bottom: 8px;
+  transition: background 0.15s, color 0.15s;
+  font-family: 'Inter', sans-serif;
+}
+
+.sidebar li.active,
+.sidebar li:hover {
+  background: #e0e7ff;
+  color: #2563eb;
+  font-weight: 600;
+} 

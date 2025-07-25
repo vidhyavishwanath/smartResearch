@@ -1,0 +1,85 @@
+.workspace-container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 32px 24px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.workspace-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2563eb;
+  margin-bottom: 24px;
+}
+
+.workspace-content {
+  padding-top: 0;
+}
+
+.file-squares-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+.add-file-square,
+.file-square {
+  width: 160px;
+  height: 160px;
+  border-radius: 18px;
+  background: #f3f4f6;
+  border: 2px dashed #a3a3a3;
+  color: #22223b;
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 24px;
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s;
+  text-align: left;
+  position: relative;
+}
+
+.add-file-square {
+  border-style: dashed;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.add-file-square:hover, .add-file-square:focus {
+  border-color: #2563eb;
+  background: #e0e7ff;
+}
+
+.file-square {
+  border-style: solid;
+  cursor: default;
+  background: #e0e7ff;
+  border-color: #2563eb;
+}
+
+.file-icon {
+  font-size: 2.2rem;
+  margin-bottom: 12px;
+}
+
+.file-name {
+  font-size: 1.05rem;
+  font-weight: 500;
+  margin-bottom: 6px;
+  word-break: break-all;
+}
+
+.file-size {
+  font-size: 0.95rem;
+  color: #6b7280;
+} 
