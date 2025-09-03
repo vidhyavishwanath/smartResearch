@@ -1,6 +1,5 @@
 import pymupdf
 from collections import Counter
-
 def extractHeaders(file_path):
     doc = pymupdf.open(file_path)
     all_spans = []

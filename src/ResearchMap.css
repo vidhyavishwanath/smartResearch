@@ -1,0 +1,129 @@
+.research-map-container {
+  display: flex;
+  flex-direction: column;
+  height: 25vh; /* Reduced from 30% to 25vh for smaller size */
+  max-height: 300px; /* Add max height constraint */
+  background: #f8fafc;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  overflow: hidden;
+}
+
+.research-map-controls {
+  padding: 12px 16px;
+  background: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.research-map-controls h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.category-badge {
+  background: #dbeafe;
+  color: #1e40af;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  border: 1px solid #bfdbfe;
+}
+
+.selected-info {
+  padding: 6px 10px;
+  background: #fef3c7;
+  border: 1px solid #f59e0b;
+  border-radius: 6px;
+  color: #92400e;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.research-map-flow {
+  flex: 1;
+  position: relative;
+  min-height: 200px; /* Ensure minimum height */
+}
+
+.research-node {
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.research-node:hover {
+  transform: scale(1.05); /* Reduced from 1.1 for subtler effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* ReactFlow customizations for smaller size */
+.react-flow__node {
+  border-radius: 50%;
+}
+
+.react-flow__edge-path {
+  stroke: #94a3b8;
+  stroke-width: 1.5; /* Reduced from 2 */
+}
+
+.react-flow__edge-path:hover {
+  stroke: #3b82f6;
+  stroke-width: 2; /* Reduced from 3 */
+}
+
+.react-flow__controls {
+  background: white;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transform: scale(0.8); /* Make controls smaller */
+}
+
+.react-flow__controls button {
+  border-radius: 4px;
+  margin: 1px;
+  width: 20px; /* Smaller buttons */
+  height: 20px;
+}
+
+.react-flow__minimap {
+  border-radius: 6px;
+  overflow: hidden;
+  transform: scale(0.7); /* Make minimap smaller */
+}
+
+.react-flow__background {
+  background-color: #f8fafc;
+}
+
+/* Compact node styling */
+.compact-node {
+  font-size: 10px !important; /* Smaller text */
+  min-width: 16px !important;
+  min-height: 16px !important;
+}
+
+@media (max-width: 768px) {
+  .research-map-container {
+    height: 20vh;
+    max-height: 250px;
+  }
+  
+  .research-map-controls {
+    padding: 8px 12px;
+  }
+  
+  .research-map-controls h3 {
+    font-size: 14px;
+  }
+  
+  .category-badge {
+    font-size: 11px;
+    padding: 3px 6px;
+  }
+}
