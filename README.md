@@ -1,1 +1,1 @@
-# smartResearch
+# Research Atlas
